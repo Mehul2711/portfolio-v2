@@ -1,5 +1,5 @@
 import Link from "next/link";
-import code from "../../public/img/code.jpg";
+// import code from "../../public/img/code.jpg";
 import Image from "next/image";
 
 export default function Logo() {
