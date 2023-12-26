@@ -2,8 +2,8 @@ import Image from "next/image";
 import sAge from "s-age";
 import { useState, useEffect } from "react";
 import Waypoints from "../dust/waypoints";
-import face from "../../public/img/face.jpeg";
-import code from "../../public/img/code.jpg";
+import face from "../../public/img/codeing2.gif";
+// import code from "../../public/img/code.jpg";
 
 export default function About() {
   return (
@@ -13,26 +13,26 @@ export default function About() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#e3f2fd"
+        fill="#b3f0ff"
       >
         <path
           fillOpacity={1}
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <div className="bg-[#e3f2fd] px-6">
+      <div className="bg-[#b3f0ff] px-6">
         <Waypoints target={"toabout"}>
           <div className=""></div>
 
           <section id="about" className="text-black py-20">
             <div className="flex flex-col md:flex-row gap-10">
-              <div className="flex justify-center md:mb-0 mb-20 py-5  md:w-screen">
+              <div className="flex justify-center md:mb-0 mb-20 py-5   md:w-screen">
                 <Image
                   className="z-50"
                   src={face}
                   alt="about me"
-                  width={300}
-                  height={1}
+                  width={600}
+                  height={500}
                   data-aos="fade-up-right"
                 />
                 {/* <Image
@@ -46,14 +46,19 @@ export default function About() {
                 /> */}
               </div>
               <div className="">
-                <h1 className="text-3xl font-bold leading-9" data-aos="fade-up">
+                <h1
+                  className="text-3xl text-center md:text-start font-bold leading-9"
+                  data-aos="fade-up"
+                >
                   About Me
                 </h1>
-                <div
-                  className="bg-[#6C63FF] w-[150px] h-[5px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                ></div>
+                <div className="flex justify-center md:justify-start">
+                  <div
+                    className="bg-[#6C63FF] w-[150px] h-[5px] "
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  ></div>
+                </div>
                 <div className="mt-2">
                   Hey! I&apos;m Mehul Kumar, the coding Picasso and badminton
                   bandit at SRM Institute of Science and Technology. Picture
@@ -88,7 +93,7 @@ export default function About() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#e3f2fd"
+        fill="#b3f0ff"
       >
         <path
           fillOpacity={1}

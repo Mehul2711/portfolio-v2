@@ -8,7 +8,7 @@ import {
   FaReact,
   FaPython,
 } from "react-icons/fa";
-import { useState, Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { clsx } from "clsx";
 import Waypoints from "../dust/waypoints";
 import { Roll } from "react-reveal";
@@ -134,6 +134,27 @@ export default function Projects() {
     },
   ]);
 
+  // State to track the window width
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  // Effect to update the window width on mount and resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       {/* Projects Starts */}
@@ -157,24 +178,48 @@ export default function Projects() {
                   index
                 ) => {
                   const isEven = index % 2 === 0;
-                  const rollDirection = isEven ? "left" : "right";
 
                   return (
                     <Fragment key={name}>
-                      <Roll left={isEven} right={!isEven}>
+                      {windowWidth >= 768 ? (
+                        <Roll left={isEven} right={!isEven}>
+                          <div className="flex justify-center">
+                            <a
+                              className={`group md:hover:scale-110 ${
+                                isLeft ? "hover:rotate-6" : "hover:-rotate-6"
+                              } transition delay-75`}
+                              href={website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="card max-w-md bg-base-100 shadow-2xl image-full">
+                                <figure>
+                                  <Image {...image} />
+                                </figure>
+                                <div className="card-body">
+                                  <h2 className="card-title">
+                                    <icon.name
+                                      className={`${icon.fill} transition ease-in-out delay-150`}
+                                    />
+                                    {name}
+                                  </h2>
+                                  <p>{description}</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </Roll>
+                      ) : (
                         <div className="flex justify-center">
                           <a
-                            className={`group hover:scale-110 ${
+                            className={`group md:hover:scale-110 ${
                               isLeft ? "hover:rotate-6" : "hover:-rotate-6"
                             } transition delay-75`}
                             href={website}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <div
-                              className="card max-w-md bg-base-100 shadow-2xl image-full"
-                              data-aos="fade-up"
-                            >
+                            <div className="card max-w-md bg-base-100 shadow-2xl image-full">
                               <figure>
                                 <Image {...image} />
                               </figure>
@@ -190,7 +235,7 @@ export default function Projects() {
                             </div>
                           </a>
                         </div>
-                      </Roll>
+                      )}
                       <div></div>
                       <div></div>
                     </Fragment>
@@ -198,7 +243,6 @@ export default function Projects() {
                 }
               )}
             </div>
-
             <div className="text-center mt-20">
               <a
                 className="btn btn-wide"

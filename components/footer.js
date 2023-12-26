@@ -19,16 +19,18 @@ export default function Footer() {
       <footer className="footer p-10">
         <div>
           <p>
-            <FaCode className="fill-indigo-500 hover:scale-110 transition delay-75 inline-block" />
+            <FaCode className="fill-indigo-500 hover:scale-110 transition delay-75 inline-block text-xl" />
             {` with `}
-            <FaHeart className="fill-error hover:scale-110 transition delay-75 inline-block" />{" "}
+            <FaHeart className=" text-xl fill-error hover:scale-110 transition delay-75 inline-block mb-1" />{" "}
             by <Logo />
             <br />
           </p>
         </div>
-        <div>
-          <span className="footer-title ml-2">Social</span>
-          <Social type={"footer"} />
+        <div className="">
+          <span className="footer-title ml-2 text-lg md:text-xl ">Social</span>
+          <div className="">
+            <Social type={"footer"} />
+          </div>
         </div>
       </footer>
     </>

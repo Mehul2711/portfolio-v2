@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { MdCode } from "react-icons/md";
 import { IoIosPaperPlane, IoMdHome, IoMdPerson } from "react-icons/io";
+import { TbListDetails } from "react-icons/tb";
 import Logo from "./dust/logo";
 
 export default function Navbar() {
@@ -87,6 +88,14 @@ export default function Navbar() {
                 >
                   <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Contact
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/188-r7IES_ZIypvYj0D_CjCfUEgLBXmja/view?usp=sharing"
+                  id="tocontact"
+                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                >
+                  <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
+                  Resume/CV
                 </a>
               </div>
               <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">

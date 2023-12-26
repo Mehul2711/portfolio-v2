@@ -43,22 +43,24 @@ export default function Social({ type }) {
 
   return (
     <>
-      <div
-        className={`flex text-2xl text-gray-500 ${
-          type === "footer"
-            ? "space-x-4 ml-2 md:space-x-6"
-            : "space-x-7 mt-2 text-center md:text-left"
-        }`}
-      >
-        {social.map(({ href, icon }) => {
-          return (
-            <Fragment key={href}>
-              <a href={href} target="_blank" rel="noopener noreferrer">
-                <icon.icon className={`${icon.fill} transition delay-150`} />
-              </a>
-            </Fragment>
-          );
-        })}
+      <div className="text-center">
+        <div
+          className={`flex text-4xl md:text-3xl text-gray-500 ${
+            type === "footer"
+              ? "space-x-4 ml-2 md:space-x-6"
+              : "space-x-7 mt-2 text-center md:text-left"
+          }`}
+        >
+          {social.map(({ href, icon }) => {
+            return (
+              <Fragment key={href}>
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  <icon.icon className={`${icon.fill} transition delay-150`} />
+                </a>
+              </Fragment>
+            );
+          })}
+        </div>
       </div>
     </>
   );

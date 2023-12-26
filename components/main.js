@@ -9,7 +9,9 @@ import Contact from "./section/contact";
 import { Toaster } from "react-hot-toast";
 import Social from "./dust/social";
 import Waypoints from "./dust/waypoints";
-import code from "../public/img/code.jpg";
+import { Fade } from "react-reveal";
+
+import coding from "../public/img/coding.gif";
 
 export default function Main() {
   return (
@@ -34,7 +36,7 @@ export default function Main() {
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="md:text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block md:mt-0 mt-2"
+                className="md:text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block md:mt-0 mt-4 mb-2 md:mb-0"
               >
                 {`Someone who likes to `}
                 <Typed
@@ -45,7 +47,9 @@ export default function Main() {
                   loop
                 />
               </p>
-              <Social type={"hero"} />
+              <div className="flex justify-center md:justify-start">
+                <Social type={"hero"} />
+              </div>
 
               <div className="mt-5 text-center md:text-left makeGapR1">
                 <a
@@ -66,14 +70,17 @@ export default function Main() {
             </div>
 
             <div className="flex justify-center md:pt-44 pt-5 md:mx-0 mx-5">
-              <Image
-                src={code}
-                alt="hero image"
-                className="md:mt-20 z-50"
-                width={300}
-                height={300}
-                data-aos="fade-up-left"
-              />
+              <Fade right>
+                {" "}
+                <Image
+                  src={coding}
+                  alt="hero image"
+                  className="mt-10 md:mt-0 z-50"
+                  width={600}
+                  height={300}
+                />
+              </Fade>
+
               <div className="absolute mt-16 mr-5 md:mx-0 mx-5">
                 {/* <Image
                   src="/img/blob/1.svg"
@@ -98,6 +105,7 @@ export default function Main() {
 
       <About />
       <Projects />
+
       <Contact />
     </>
   );
