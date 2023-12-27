@@ -84,7 +84,7 @@ export default function Navbar() {
                 </a>
                 <a
                   href="#techStack"
-                  id="tocontact"
+                  id="totechStack"
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                 >
                   <div className="flex sm:flex-col gap-1 md:gap-0">
@@ -105,20 +105,13 @@ export default function Navbar() {
 
                 <a
                   href="#experience"
-                  id="tocontact"
+                  id="toexperience"
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                 >
                   <GiSoapExperiment className="inline text-xl md:w-auto md:h-auto" />{" "}
                   Experience
                 </a>
-                <a
-                  href="https://drive.google.com/file/d/188-r7IES_ZIypvYj0D_CjCfUEgLBXmja/view?usp=sharing"
-                  id="tocontact"
-                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
-                >
-                  <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
-                  Resume/CV
-                </a>
+
                 <a
                   href="#contact"
                   id="tocontact"
@@ -126,6 +119,13 @@ export default function Navbar() {
                 >
                   <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Contact
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/188-r7IES_ZIypvYj0D_CjCfUEgLBXmja/view?usp=sharing"
+                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                >
+                  <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
+                  Resume/CV
                 </a>
               </div>
               <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
