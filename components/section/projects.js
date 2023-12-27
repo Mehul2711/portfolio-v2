@@ -192,7 +192,9 @@ export default function Projects() {
                           <div className="flex justify-center">
                             <a
                               className={`group md:hover:scale-110 ${
-                                isLeft ? "hover:rotate-6" : "hover:-rotate-6"
+                                isLeft
+                                  ? "md:hover:rotate-6"
+                                  : "md:hover:-rotate-6"
                               } transition delay-75`}
                               href={website}
                               target="_blank"
@@ -222,7 +224,9 @@ export default function Projects() {
                         <div className="flex justify-center">
                           <a
                             className={`group md:hover:scale-110 ${
-                              isLeft ? "hover:rotate-6" : "hover:-rotate-6"
+                              isLeft
+                                ? "md:hover:rotate-6"
+                                : "md:hover:-rotate-6"
                             } transition delay-75`}
                             href={website}
                             target="_blank"
