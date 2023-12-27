@@ -5,6 +5,8 @@ import { MdCode } from "react-icons/md";
 import { IoIosPaperPlane, IoMdHome, IoMdPerson } from "react-icons/io";
 import { TbListDetails } from "react-icons/tb";
 import Logo from "./dust/logo";
+import { GiSoapExperiment } from "react-icons/gi";
+import { GrTechnology } from "react-icons/gr";
 
 export default function Navbar() {
   const [open, setOpen] = useState({
@@ -65,6 +67,7 @@ export default function Navbar() {
                   <IoMdHome className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Home
                 </a>
+
                 <a
                   href="#about"
                   id="toabout"
@@ -74,6 +77,18 @@ export default function Navbar() {
                   About
                 </a>
                 <a
+                  href="#techStack"
+                  id="tocontact"
+                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                >
+                  <div className="flex sm:flex-col gap-1 md:gap-0">
+                    <div className="mt-1">
+                      <GrTechnology className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
+                    </div>
+                    <div className="mt-1 md:mt-0">Skills</div>
+                  </div>
+                </a>
+                <a
                   href="#projects"
                   id="toprojects"
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
@@ -81,13 +96,14 @@ export default function Navbar() {
                   <MdCode className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Projects
                 </a>
+
                 <a
-                  href="#contact"
+                  href="#experience"
                   id="tocontact"
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                 >
-                  <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
-                  Contact
+                  <GiSoapExperiment className="inline text-xl md:w-auto md:h-auto" />{" "}
+                  Experience
                 </a>
                 <a
                   href="https://drive.google.com/file/d/188-r7IES_ZIypvYj0D_CjCfUEgLBXmja/view?usp=sharing"
@@ -96,6 +112,14 @@ export default function Navbar() {
                 >
                   <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Resume/CV
+                </a>
+                <a
+                  href="#contact"
+                  id="tocontact"
+                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                >
+                  <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
+                  Contact
                 </a>
               </div>
               <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">

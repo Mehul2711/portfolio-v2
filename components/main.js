@@ -10,6 +10,8 @@ import { Toaster } from "react-hot-toast";
 import Social from "./dust/social";
 import Waypoints from "./dust/waypoints";
 import { Fade } from "react-reveal";
+import Skills from "./section/skills";
+import Experience from "./section/experience";
 
 import coding from "../public/img/coding.gif";
 
@@ -70,16 +72,18 @@ export default function Main() {
             </div>
 
             <div className="flex justify-center md:pt-44 pt-5 md:mx-0 mx-5">
-              <Fade right>
-                {" "}
-                <Image
-                  src={coding}
-                  alt="hero image"
-                  className="mt-10 md:mt-0 z-50"
-                  width={500}
-                  height={300}
-                />
-              </Fade>
+              <div className="">
+                <Fade right>
+                  {" "}
+                  <Image
+                    src={coding}
+                    alt="hero image"
+                    className="mt-10  md:mt-0 z-50"
+                    width={550}
+                    height={300}
+                  />
+                </Fade>
+              </div>
 
               <div className="absolute mt-16 mr-5 md:mx-0 mx-5">
                 {/* <Image
@@ -104,8 +108,9 @@ export default function Main() {
       {/* Header Ends */}
 
       <About />
+      <Skills />
       <Projects />
-
+      <Experience />
       <Contact />
     </>
   );

@@ -18,8 +18,7 @@ export default function Projects() {
   let [projects] = useState([
     {
       name: "Weather App",
-      description:
-        "Developed a weather app portal for fetching the weather details of different cities around the world.",
+      description: "Developed a weather app portal.",
       isLeft: true,
       website: "https://weather-app-alpha-gold-58.vercel.app/",
       icon: {
@@ -29,14 +28,13 @@ export default function Projects() {
       image: {
         src: "/img/projects/weather.jpg",
         alt: "Weather App",
-        width: 500,
+        width: 448,
         height: 250,
       },
     },
     {
       name: "Secure Meeting Platform",
-      description:
-        "A video chat/meeting webapp using WebRTC and WebSockets (socket.io). Basically a Google Meet clone + a collaborative whiteboard.",
+      description: "A video chat/meeting webapp.",
       isLeft: false,
       website: "https://secure-meeting-platform.onrender.com/",
       icon: {
@@ -46,7 +44,7 @@ export default function Projects() {
       image: {
         src: "/img/projects/meet.jpg",
         alt: "Secure Meeting Platform",
-        width: 500,
+        width: 390,
         height: 250,
       },
     },
@@ -68,8 +66,7 @@ export default function Projects() {
     },
     {
       name: "Contributed in Aaruush`23",
-      description:
-        "Contributed to the Aaruush`23 website, the National Level Techno-Management Fest of SRM Institute of Science and Technology.",
+      description: "Contributed to the Aaruush`23 website.",
       isLeft: false,
       website: "https://aaruush.org/",
       icon: {
@@ -79,14 +76,13 @@ export default function Projects() {
       image: {
         src: "/img/projects/aaruush.jpg",
         alt: "Aaruush`23",
-        width: 448,
+        width: 390,
         height: 250,
       },
     },
     {
       name: "Contributed in T Summit`23",
-      description:
-        "Contributed to the T Summit`23 website, the National Level Techno-Management Fest of SRM Institute of Science and Technology.",
+      description: "Contributed to the T Summit`23 website",
       isLeft: true,
       website: "https://tsummit.org/",
       icon: {
@@ -96,13 +92,13 @@ export default function Projects() {
       image: {
         src: "/img/projects/summit.png",
         alt: "tsummit",
-        width: 508,
+        width: 390,
         height: 250,
       },
     },
     {
-      name: "Contributed in HackTheBox SRMIST",
-      description: "Contributed to the HackTheBox SRMIST website.",
+      name: "Contributed in HTB SRMIST",
+      description: "Contributed to the club website.",
       isLeft: true,
       website: "https://www.htbsrmist.tech/",
       icon: {
@@ -112,7 +108,7 @@ export default function Projects() {
       image: {
         src: "/img/projects/htb.jpg",
         alt: "htb",
-        width: 508,
+        width: 390,
         height: 250,
       },
     },
@@ -128,7 +124,7 @@ export default function Projects() {
       image: {
         src: "/img/projects/ngo.jpg",
         alt: "NGO",
-        width: 508,
+        width: 448,
         height: 250,
       },
     },
@@ -158,10 +154,20 @@ export default function Projects() {
   return (
     <>
       {/* Projects Starts */}
-      <div className="px-6">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        fill="#b3f0ff"
+      >
+        <path
+          fillOpacity={1}
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div className="bg-[#b3f0ff] px-6">
         <Waypoints target={"toprojects"}>
           <section id="projects" className="pt-28">
-            <h1 className="text-2xl font-bold text-center" data-aos="fade-up">
+            <h1 className="text-3xl font-bold text-center" data-aos="fade-up">
               Some of My Projects
             </h1>
             <div className="flex justify-center">
@@ -194,7 +200,10 @@ export default function Projects() {
                             >
                               <div className="card max-w-md bg-base-100 shadow-2xl image-full">
                                 <figure>
-                                  <Image {...image} />
+                                  <Image
+                                    {...image}
+                                    className="object-contain"
+                                  />
                                 </figure>
                                 <div className="card-body">
                                   <h2 className="card-title">
@@ -243,7 +252,7 @@ export default function Projects() {
                 }
               )}
             </div>
-            <div className="text-center mt-20">
+            <div className="text-center mt-16">
               <a
                 className="btn btn-wide"
                 href="https://github.com/Mehul2711?tab=repositories"
@@ -257,6 +266,16 @@ export default function Projects() {
           </section>
         </Waypoints>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        fill="#b3f0ff"
+      >
+        <path
+          fillOpacity={1}
+          d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,106.7C560,139,640,181,720,197.3C800,213,880,203,960,170.7C1040,139,1120,85,1200,80C1280,75,1360,117,1400,138.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
       {/* Projects Ends */}
     </>
   );
