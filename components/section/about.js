@@ -1,8 +1,8 @@
 import Image from "next/image";
-import sAge from "s-age";
+
 import { useState, useEffect } from "react";
 import Waypoints from "../dust/waypoints";
-import Fade from "react-reveal/fade";
+import Fade from "react-reveal/Fade";
 import face from "../../public/img/codeing2.gif";
 // import code from "../../public/img/code.jpg";
 
