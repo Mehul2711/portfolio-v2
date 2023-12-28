@@ -186,7 +186,7 @@ export default function Projects() {
                 data-aos-delay="400"
               ></span>
             </div>
-            <div className="grid grid-cols-1 mt-20 gap-16 mx-auto">
+            <div className="grid grid-cols-1 mt-20 gap-16 mx-auto max-w-screen-xl">
               {projects.map(
                 (
                   { name, description, isLeft, link, website, icon, image },
@@ -268,7 +268,7 @@ export default function Projects() {
                           {windowWidth >= 640 ? (
                             <Bounce right>
                               <div>
-                                <p className="md:text-xl  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-9 shadow-2xl p-6 md:p-5 rounded-lg  border-2 border-black">
+                                <p className="md:text-xl  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-7 shadow-2xl p-6 md:p-5 rounded-lg  border-2 border-black">
                                   {description}
                                 </p>
                               </div>
