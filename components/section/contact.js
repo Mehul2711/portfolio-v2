@@ -144,7 +144,7 @@ export default function Contact() {
                     </div>
 
                     <ul className="sm:list-disc  sm:ml-5 mt-1">
-                      <li className="text-sm sm:text-xl text-center">
+                      <li className="text-sm sm:text-xl text-center sm:text-start">
                         <a
                           href="mailto:mehul271102@gmail.com"
                           className="hover:text-indigo-500"
@@ -153,7 +153,7 @@ export default function Contact() {
                         </a>{" "}
                         (main)
                       </li>
-                      <li className="text-sm sm:text-xl text-center">
+                      <li className="text-sm sm:text-xl text-center sm:text-start">
                         <a
                           href="mailto:mehulkumar086@gmail.com"
                           className="hover:text-indigo-500"
