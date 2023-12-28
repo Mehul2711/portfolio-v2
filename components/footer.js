@@ -1,4 +1,6 @@
 import Logo from "./dust/logo";
+import Bounce from "react-reveal/Bounce";
+
 import {
   FaCode,
   FaHeart,

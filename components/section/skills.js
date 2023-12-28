@@ -2,8 +2,11 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import Waypoints from "../../components/dust/waypoints";
+import { motion } from "framer-motion";
+import Flip from "react-reveal/Flip";
 
 import { skillsData } from "../../constants/skillsData";
+import { LightSpeed, Rotate } from "react-reveal";
 
 const Skills = () => {
   const [section, setSection] = useState("Advance");
@@ -112,13 +115,21 @@ const Skills = () => {
             ref={techBoxesRef}
           >
             {sectionData.map((tech) => (
-              <div
-                className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#b3f0ff] text-black shadow-2xl rounded-lg flex flex-col  gap-3 items-center"
-                key={tech.name}
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
               >
-                <p>{tech.icon}</p>
-                <p>{tech.name}</p>
-              </div>
+                <LightSpeed left>
+                  <div
+                    className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#3eff9e]  text-black shadow-2xl rounded-lg flex flex-col  gap-3 items-center"
+                    key={tech.name}
+                  >
+                    <p>{tech.icon}</p>
+                    <p>{tech.name}</p>
+                  </div>
+                </LightSpeed>
+              </motion.a>
             ))}
           </div>
         </section>

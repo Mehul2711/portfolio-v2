@@ -4,6 +4,7 @@ import { MdWork } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 import { BsArrowDownCircle } from "react-icons/bs";
 import Waypoints from "../../components/dust/waypoints";
+import Zoom from "react-reveal/Zoom";
 
 import { ExperienceData } from "../../constants/experienceData";
 
@@ -12,6 +13,24 @@ const Experience = () => {
   const [isExpe, setIsExpe] = useState(false);
   const expeRef = useRef();
   const expeBoxesRef = useRef();
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const expeObserver = new IntersectionObserver(
@@ -32,6 +51,8 @@ const Experience = () => {
     }
   }, [isExpe]);
 
+  const isMobileView = windowWidth < 640;
+
   return (
     <Fragment>
       <Waypoints target={"toexperience"}>
@@ -51,94 +72,20 @@ const Experience = () => {
           </div>
 
           <div
-            className="pop-down-child pb-[30px] px-[20px] mb-36 "
+            className="pop-down-child  pb-[30px] px-[20px] mb-36 "
             ref={expeBoxesRef}
           >
-            {ExperienceData.map((experience, index) =>
-              experience.side === "left" ? (
-                <div
-                  className={`md:flex gap-2 items-end transition-all  duration-500 ${
-                    index !== 0 ? "mt-7" : ""
-                  }`}
-                  key={experience.companyName}
-                >
+            {ExperienceData.map((experience, index) => (
+              <div
+                className={`md:flex gap-2 items-end  transition-all duration-500 ${
+                  index !== 0 ? "mt-7" : ""
+                }`}
+                key={experience.companyName}
+              >
+                {isMobileView ? (
+                  // Content without React Reveal animations for mobile view
                   <div
-                    className="md:w-[45%] cursor-pointer p-3  shadow-zinc-300 dark:shadow-zinc-700 bg-[#b3f0ff] shadow-2xl   rounded"
-                    onClick={() =>
-                      setDesc(
-                        desc === experience.description
-                          ? ""
-                          : experience.description
-                      )
-                    }
-                  >
-                    <div className="flex justify-between  gap-2">
-                      <p className="text-xl md:text-2xl font-bold text-violet-600">
-                        {experience.companyName}
-                      </p>
-                      <p className="flex gap-2 items-center text-blue-500">
-                        <ImLocation /> {experience.location}
-                      </p>
-                    </div>
-
-                    <div className="flex justify-between text-black gap-2 mt-2">
-                      <p className="font-semibold">{experience.role}</p>
-                      <p>{experience.fromTo}</p>
-                    </div>
-
-                    <p
-                      className="mt-2 text-justify transition-all duration-500 overflow-hidden text-black"
-                      style={
-                        desc == experience.description
-                          ? { maxHeight: "400px" }
-                          : { maxHeight: "0px" }
-                      }
-                    >
-                      {experience.description}
-                    </p>
-                  </div>
-                  <button
-                    className="transition-all duration-500 hidden md:block"
-                    onClick={() =>
-                      setDesc(
-                        desc === experience.description
-                          ? ""
-                          : experience.description
-                      )
-                    }
-                    style={
-                      desc === experience.description
-                        ? { transform: "rotate(180deg)" }
-                        : {}
-                    }
-                  >
-                    <BsArrowDownCircle size={22} />
-                  </button>
-                </div>
-              ) : (
-                <div
-                  className="md:flex justify-end  items-end mt-7 gap-2 transition-all duration-500 "
-                  key={experience.companyName}
-                >
-                  <button
-                    className="hidden md:block"
-                    onClick={() =>
-                      setDesc(
-                        desc === experience.description
-                          ? ""
-                          : experience.description
-                      )
-                    }
-                    style={
-                      desc === experience.description
-                        ? { transform: "rotate(180deg)" }
-                        : {}
-                    }
-                  >
-                    <BsArrowDownCircle size={22} />
-                  </button>
-                  <div
-                    className="md:w-[45%] cursor-pointer  transition-all duration-500 p-3  shadow-zinc-300 dark:shadow-zinc-700 rounded bg-[#b3f0ff] shadow-2xl "
+                    className={`md:w-[45%] cursor-pointer p-6  border-2 border-black  shadow-zinc-300 dark:shadow-zinc-700 bg-[#20E484] shadow-2xl   rounded`}
                     onClick={() =>
                       setDesc(
                         desc === experience.description
@@ -148,20 +95,21 @@ const Experience = () => {
                     }
                   >
                     <div className="flex justify-between gap-2">
-                      <p className="text-xl md:text-2xl font-bold text-violet-600">
+                      <p className="text-xl md:text-3xl font-bold text-violet-600">
                         {experience.companyName}
                       </p>
-                      <p className="flex gap-2 items-center text-blue-500">
+                      <p className="flex gap-2 sm:text-xl items-center text-blue-500">
                         <ImLocation /> {experience.location}
                       </p>
                     </div>
 
-                    <div className="flex justify-between text-black mt-2 gap-2">
+                    <div className="flex justify-between sm:text-xl text-black gap-2 mt-2">
                       <p className="font-semibold">{experience.role}</p>
                       <p>{experience.fromTo}</p>
                     </div>
+
                     <p
-                      className="mt-2 overflow-hidden transition-all duration-500 text-justify text-black"
+                      className="mt-3 text-justify transition-all duration-500 overflow-hidden text-black sm:text-xl"
                       style={
                         desc == experience.description
                           ? { maxHeight: "400px" }
@@ -171,9 +119,70 @@ const Experience = () => {
                       {experience.description}
                     </p>
                   </div>
-                </div>
-              )
-            )}
+                ) : (
+                  // Content with React Reveal animations for larger screens
+                  <Zoom
+                    left={experience.side === "left"}
+                    right={experience.side === "right"}
+                  >
+                    <div className="flex justify-center ">
+                      <div
+                        className={`md:w-[80%] cursor-pointer p-6 my-8  shadow-zinc-300 dark:shadow-zinc-700 bg-[#20E484] border-2 border-black shadow-2xl   rounded`}
+                        onClick={() =>
+                          setDesc(
+                            desc === experience.description
+                              ? ""
+                              : experience.description
+                          )
+                        }
+                      >
+                        <div className="flex justify-between gap-2">
+                          <p className="text-xl md:text-3xl font-bold text-violet-600">
+                            {experience.companyName}
+                          </p>
+                          <p className="flex gap-2 sm:text-xl items-center text-blue-500">
+                            <ImLocation /> {experience.location}
+                          </p>
+                        </div>
+
+                        <div className="flex justify-between sm:text-xl text-black gap-2 mt-2">
+                          <p className="font-semibold">{experience.role}</p>
+                          <p>{experience.fromTo}</p>
+                        </div>
+
+                        <p
+                          className="mt-3 text-justify transition-all duration-500 overflow-hidden text-black sm:text-xl"
+                          style={
+                            desc == experience.description
+                              ? { maxHeight: "400px" }
+                              : { maxHeight: "0px" }
+                          }
+                        >
+                          {experience.description}
+                        </p>
+                      </div>
+                      <button
+                        className="transition-all absolute right-10 top-20 duration-500 hidden md:block"
+                        onClick={() =>
+                          setDesc(
+                            desc === experience.description
+                              ? ""
+                              : experience.description
+                          )
+                        }
+                        style={
+                          desc === experience.description
+                            ? { transform: "rotate(180deg)" }
+                            : {}
+                        }
+                      >
+                        <BsArrowDownCircle size={42} />
+                      </button>
+                    </div>
+                  </Zoom>
+                )}
+              </div>
+            ))}
           </div>
         </section>
       </Waypoints>
