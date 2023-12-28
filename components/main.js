@@ -81,7 +81,7 @@ export default function Main() {
                     src={coding}
                     alt="hero image"
                     className="mt-4  md:mt-0 z-50"
-                    width={500}
+                    width={450}
                     height={300}
                   />
                 </Fade>
