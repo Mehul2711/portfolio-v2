@@ -38,5 +38,5 @@ html {
 .loader-dots {
   display: inline-block;
   font-size: 2em;
-  animation: loadingAnimation 1.5s infinite;
+  animation: loadingAnimation 0.75s infinite;
 }

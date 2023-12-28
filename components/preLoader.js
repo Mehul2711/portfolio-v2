@@ -4,7 +4,7 @@ import Loader from "../public/img/loader.gif";
 const PreLoader = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen">
-      <div className="text-4xl font-bold text-center m">
+      <div className="text-4xl font-bold text-center mb-3 ">
         Loading<span className="loader-dots">...</span>
       </div>
       <div>

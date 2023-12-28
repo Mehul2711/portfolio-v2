@@ -9,11 +9,11 @@ import Contact from "./section/contact";
 import { Toaster } from "react-hot-toast";
 import Social from "./dust/social";
 import Waypoints from "./dust/waypoints";
-import { Fade } from "react-reveal";
+import { Bounce, Flip, Roll } from "react-reveal";
 import Skills from "./section/skills";
 import Experience from "./section/experience";
 
-import coding from "../public/img/coding.gif";
+import me from "../public/img/me.jpg";
 
 export default function Main() {
   return (
@@ -94,17 +94,41 @@ export default function Main() {
             </div>
 
             <div className="flex justify-end md:pt-40  md:mx-0 mx-5">
-              <div className="">
-                <Fade right>
-                  {" "}
-                  <Image
-                    src={coding}
-                    alt="hero image"
-                    className="mt-4  md:mt-0 z-50"
-                    width={450}
-                    height={300}
-                  />
-                </Fade>
+              <div>
+                <Flip right>
+                  <div className="grid grid-cols-1">
+                    <div className="flex justify-end items-center md:mr-10 ">
+                      <div className=" overflow-hidden  shadow-2xl border-[4px] border-black rounded-full">
+                        <Image
+                          src={me}
+                          alt="hero image"
+                          className="object-cover md:h-[380px] md:w-[380px] rounded-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="mt-10 flex flex-col justify-end">
+                      <div className="text-xl text-center sm:text-start sm:text-2xl leading-1 tracking-tight  text-base-900 sm:leading-none ">
+                        <span
+                          className="inline md:block"
+                          data-aos="fade-right"
+                          data-aos-duration="1000"
+                        >
+                          Student at{" "}
+                          <span className="font-extrabold text-blue-500 animate-pulse">
+                            SRMIST KTR
+                          </span>
+                          , Chennai{" "}
+                          <span className=" animate-spin inline-block">😊</span>
+                        </span>
+                      </div>
+
+                      <div className="text-xl sm:text-2xl md:mt-1 text-center ">
+                        Web Developer{" "}
+                        <span className="animate-bounce inline-block">👨‍💻</span>
+                      </div>
+                    </div>
+                  </div>
+                </Flip>
               </div>
             </div>
           </div>
