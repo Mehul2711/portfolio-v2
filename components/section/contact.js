@@ -41,7 +41,11 @@ export default function Contact() {
     perspective: "500px",
     colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
   };
-
+  const [formData, setFormData] = useState({
+    from: "",
+    email: "",
+    msg: "",
+  });
   const formSubmit = async (e) => {
     e.preventDefault();
     var d = document.getElementById("contactFormSubmit");
@@ -69,12 +73,19 @@ export default function Contact() {
       if (res.type === "success") {
         setExplode(!explode);
         setTimeout(() => setExplode(false), 1000);
+        setFormData({
+          from: "",
+          email: "",
+          msg: "",
+        });
       }
+
+      d.innerHTML = "Send Message";
+      d.classList.remove("btn-disabled");
+      d.classList.remove("loading");
     }
-    d.innerHTML = "Send Message";
-    d.classList.remove("btn-disabled");
-    d.classList.remove("loading");
   };
+
   return (
     <>
       {/* Contact Starts */}
@@ -82,14 +93,14 @@ export default function Contact() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#20E484"
+        fill="#3fe9ff"
       >
         <path
           fillOpacity={1}
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <div className="px-6 bg-[#20E484]">
+      <div className="px-6 bg-[#3fe9ff]">
         <Waypoints target={"tocontact"}>
           <section id="contact" className="pt-16">
             <h1
@@ -177,7 +188,7 @@ export default function Contact() {
                           Name
                         </span>
                         <input
-                          className="w-full  bg-gray-200 text-gray-900 mt-2 p-5 sm:p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                          className="w-full  bg-gray-200 text-gray-900 mt-2 p-5 sm:p-3 rfocus:outline-none focus:shadow-outline"
                           type="text"
                           placeholder="Your Name 😊"
                           name="from"
@@ -189,7 +200,7 @@ export default function Contact() {
                           Email
                         </span>
                         <input
-                          className="w-full bg-gray-200 text-gray-900 mt-2 p-5 sm:p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                          className="w-full bg-gray-200 text-gray-900 mt-2 p-5 sm:p-3  focus:outline-none focus:shadow-outline"
                           type="email"
                           placeholder="your@email.com 📧"
                           name="email"
@@ -201,7 +212,7 @@ export default function Contact() {
                           Message
                         </span>
                         <textarea
-                          className="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-5 rounded-lg focus:outline-none focus:shadow-outline"
+                          className="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-5 rfocus:outline-none focus:shadow-outline"
                           placeholder="What's on your mind? 🤔"
                           name="msg"
                           maxLength={1024}
@@ -229,7 +240,7 @@ export default function Contact() {
                             Name
                           </span>
                           <input
-                            className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            className="w-full bg-gray-200 text-gray-900 mt-2 p-3  focus:outline-none focus:shadow-outline"
                             type="text"
                             placeholder="Your Name 😊"
                             name="from"
@@ -243,7 +254,7 @@ export default function Contact() {
                             Email
                           </span>
                           <input
-                            className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            className="w-full bg-gray-200 text-gray-900 mt-2 p-3  focus:outline-none focus:shadow-outline"
                             type="email"
                             placeholder="your@email.com 📧"
                             name="email"
@@ -257,7 +268,7 @@ export default function Contact() {
                             Message
                           </span>
                           <textarea
-                            className="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            className="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3  focus:outline-none focus:shadow-outline"
                             placeholder="What's on your mind? 🤔"
                             name="msg"
                             maxLength={1024}
@@ -293,7 +304,7 @@ export default function Contact() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#20E484"
+        fill="#3fe9ff"
       >
         <path
           fillOpacity={1}

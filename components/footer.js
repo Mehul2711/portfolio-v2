@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="border-b border-gray-200"></div>
       </div>
       <footer className="footer p-10">
-        <div>
+        <div className="flex justify-center sm:justify-start w-full">
           <p>
             <FaCode className="fill-indigo-500 hover:scale-110 transition delay-75 inline-block text-xl" />
             {` with `}
@@ -28,10 +28,17 @@ export default function Footer() {
             <br />
           </p>
         </div>
-        <div className="">
-          <span className="footer-title ml-2 text-lg md:text-xl ">Social</span>
-          <div className="">
-            <Social type={"footer"} />
+        <div className="flex justify-center sm:justify-start w-full">
+          <div className="flex flex-col ">
+            <div className="flex justify-center sm:justify-start">
+              {" "}
+              <span className="footer-title ml-2 text-lg md:text-xl ">
+                Social
+              </span>
+            </div>
+            <div>
+              <Social type={"footer"} />
+            </div>
           </div>
         </div>
       </footer>

@@ -58,7 +58,7 @@ const Experience = () => {
       <Waypoints target={"toexperience"}>
         <section id="experience" ref={expeRef}>
           <h1
-            className="text-3xl font-bold text-center mt-48"
+            className="text-3xl font-bold text-center mt-36 sm:mt-48"
             data-aos="fade-up"
           >
             Experience
@@ -85,7 +85,7 @@ const Experience = () => {
                 {isMobileView ? (
                   // Content without React Reveal animations for mobile view
                   <div
-                    className={`md:w-[45%] cursor-pointer p-6  border-2 border-black  shadow-zinc-300 dark:shadow-zinc-700 bg-[#20E484] shadow-2xl   rounded`}
+                    className={`md:w-[45%] cursor-pointer p-6  border-2 border-black  shadow-zinc-300 dark:shadow-zinc-700 bg-[#3fe9ff] shadow-2xl   `}
                     onClick={() =>
                       setDesc(
                         desc === experience.description
@@ -127,7 +127,7 @@ const Experience = () => {
                   >
                     <div className="flex justify-center ">
                       <div
-                        className={`md:w-[80%] cursor-pointer p-6 my-8  shadow-zinc-300 dark:shadow-zinc-700 bg-[#20E484] border-2 border-black shadow-2xl   rounded`}
+                        className={`md:w-[80%] cursor-pointer p-6 my-8  shadow-zinc-300 dark:shadow-zinc-700 bg-[#3fe9ff] border-2 border-black shadow-2xl   `}
                         onClick={() =>
                           setDesc(
                             desc === experience.description

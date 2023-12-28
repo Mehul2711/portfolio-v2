@@ -49,7 +49,7 @@ export default function Projects() {
         src: "/img/projects/meet.jpg",
         alt: "Secure Meeting Platform",
         width: 448,
-        height: 250,
+        height: 252,
       },
     },
     {
@@ -166,14 +166,14 @@ export default function Projects() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#20E484"
+        fill="#3fe9ff"
       >
         <path
           fillOpacity={1}
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <div className="bg-[#20E484] px-6">
+      <div className="bg-[#3fe9ff] px-6">
         <Waypoints target={"toprojects"}>
           <section id="projects" className="pt-28">
             <h1 className="text-3xl font-bold text-center" data-aos="fade-up">
@@ -205,23 +205,21 @@ export default function Projects() {
                                   isLeft
                                     ? "md:hover:rotate-6"
                                     : "md:hover:-rotate-6"
-                                } transition delay-75`}
+                                } transition delay-75 `}
                                 href={website}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                <div className="card max-w-md bg-base-100 shadow-2xl image-full">
-                                  <figure>
+                                <div className="max-w-md min-h-md relative ">
+                                  <figure className="m-0">
                                     <Image
                                       {...image}
-                                      className="object-contain"
+                                      className="object-cover"
                                     />
                                   </figure>
-                                  <div className="card-body flex items-center justify-center">
-                                    <h2 className="card-title text-2xl">
-                                      <icon.name
-                                        className={`${icon.fill} transition ease-in-out delay-150`}
-                                      />
+                                  <div className="absolute top-0 left-0 w-full h-[250px] bg-black backdrop-blur-sm hover:backdrop-blur-none bg-opacity-50 transition-opacity duration-300 ease-in hover:bg-opacity-0 flex items-center justify-center">
+                                    <h2 className="card-title text-2xl text-white opacity-100 group-hover:opacity-0 transition ease-in-out delay-150 m-0">
+                                      <icon.name className={`${icon.fill}`} />
                                       {name}
                                     </h2>
                                   </div>
@@ -236,7 +234,7 @@ export default function Projects() {
                                 isLeft
                                   ? "md:hover:rotate-6"
                                   : "md:hover:-rotate-6"
-                              } transition delay-75`}
+                              } transition delay-75 rou `}
                               href={website}
                               target="_blank"
                               rel="noopener noreferrer"
@@ -268,14 +266,14 @@ export default function Projects() {
                           {windowWidth >= 640 ? (
                             <Bounce right>
                               <div>
-                                <p className="md:text-xl  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-7 shadow-2xl p-6 md:p-5 rounded-lg  border-2 border-black">
+                                <p className="md:text-xl bg-white text-black  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-8 shadow-2xl p-6 md:p-5  border-2 border-black">
                                   {description}
                                 </p>
                               </div>
                             </Bounce>
                           ) : (
                             <div>
-                              <p className="md:text-xl border-2 border-black  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-9 shadow-2xl p-6 md:p-5 rounded-lg">
+                              <p className="md:text-xl border-2 border-black  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-9 shadow-2xl p-6 md:p-5 ">
                                 {description}
                               </p>
                             </div>
@@ -304,7 +302,7 @@ export default function Projects() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        fill="#20E484"
+        fill="#3fe9ff"
       >
         <path
           fillOpacity={1}

@@ -69,7 +69,7 @@ const Skills = () => {
           </div>
 
           <div
-            className="pop-down transition-all w-fit duration-500 m-auto rounded-lg border border-black dark:border-white border-solid overflow-hidden "
+            className="pop-down transition-all w-fit duration-500 m-auto  border border-black dark:border-white border-solid overflow-hidden "
             ref={buttonsRef}
           >
             <button
@@ -117,7 +117,7 @@ const Skills = () => {
             {sectionData.map((tech) => (
               <motion.a whileHover={{ scale: 1.1 }} key={tech.name}>
                 <LightSpeed left>
-                  <div className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#3eff9e]  text-black shadow-2xl rounded-lg flex flex-col gap- items-center ">
+                  <div className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#3fe9ff]  text-black shadow-2xl  flex flex-col gap- items-center ">
                     <p>{tech.icon}</p>
                     <p>{tech.name}</p>
                   </div>
