@@ -119,6 +119,7 @@ const Skills = () => {
                 whileHover={{ scale: 1.1 }}
                 onHoverStart={(e) => {}}
                 onHoverEnd={(e) => {}}
+                key={e}
               >
                 <LightSpeed left>
                   <div
