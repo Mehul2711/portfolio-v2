@@ -91,7 +91,7 @@ export default function Contact() {
       </svg>
       <div className="px-6 bg-[#20E484]">
         <Waypoints target={"tocontact"}>
-          <section id="contact" className="pt-28">
+          <section id="contact" className="pt-16">
             <h1
               className="text-2xl font-bold text-center text-gray-900"
               data-aos="fade-up"
@@ -103,7 +103,7 @@ export default function Contact() {
                 data-aos-delay="400"
               ></div>
             </div>
-            <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-5 sm:py-16 mx-auto text-gray-900">
+            <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-5  mx-auto text-gray-900">
               <div className="flex flex-col justify-between">
                 <div>
                   <div>
@@ -122,7 +122,7 @@ export default function Contact() {
                       ></div>
                     </div>
 
-                    <ul className="list-disc flex justify-center sm:justify-start ml-5 mt-1">
+                    <ul className="sm:list-disc flex justify-center sm:justify-start ml-5 mt-1">
                       <li>{`mehul_2711`}</li>
                     </ul>
                   </div>
@@ -143,8 +143,8 @@ export default function Contact() {
                       ></div>
                     </div>
 
-                    <ul className="sm:list-disc text-center sm:text-start sm:ml-5 mt-1">
-                      <li>
+                    <ul className="sm:list-disc  sm:ml-5 mt-1">
+                      <li className="text-sm sm:text-xl text-center">
                         <a
                           href="mailto:mehul271102@gmail.com"
                           className="hover:text-indigo-500"
@@ -153,21 +153,21 @@ export default function Contact() {
                         </a>{" "}
                         (main)
                       </li>
-                      <li>
+                      <li className="text-sm sm:text-xl text-center">
                         <a
                           href="mailto:mehulkumar086@gmail.com"
                           className="hover:text-indigo-500"
                         >
                           mehulkumar086@gmail.com
                         </a>{" "}
-                        (second)
+                        (2nd)
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div>
+              <div className="mt-5 sm:mt-0">
                 <form id="contactForm" onSubmit={formSubmit}>
                   {/* <div className="grid grid-cols-2 gap-4"> */}
                   {isSmallScreen ? (

@@ -45,7 +45,7 @@ export default function About() {
 
           <section id="about" className="text-black py-20">
             <div className="flex flex-col md:flex-row gap-10">
-              <div className="flex justify-center md:mb-0 mb-20 py-5   md:w-screen">
+              <div className="flex justify-center md:mb-0 mb-5 py-5   md:w-screen">
                 <Fade left>
                   <Image
                     className="z-50"

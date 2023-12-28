@@ -25,7 +25,7 @@ export default function Main() {
           <div className="grid grid-cols-1 md:grid-cols-2 px-16">
             <div className="pt-36 sm:pt-52 ">
               <div className="">
-                <h1 className="text-2xl text-center sm:text-start sm:text-4xl font-extrabold leading-10 tracking-tight  text-base-900 sm:leading-none md:text-3xl lg:text-4xl">
+                <h1 className="text-xl text-center sm:text-start sm:text-4xl font-extrabold leading-10 tracking-tight  text-base-900 sm:leading-none md:text-3xl lg:text-4xl">
                   <span
                     className="inline md:block"
                     data-aos="fade-right"
@@ -40,7 +40,7 @@ export default function Main() {
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="md:text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block text-center sm:text-start mb-2 md:mb-0 mx-2"
+                className="text-sm md:text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block text-center sm:text-start mb-2 md:mb-0 mx-2"
               >
                 {`Someone who likes to `}
                 <Typed
@@ -89,7 +89,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className=" animate-sb pt-24 flex justify-center">
+          <div className=" animate-sb pt-8 sm:pt-24 flex justify-center">
             <a href="#about">
               <IoIosArrowDropdownCircle className="scale-[200%] hover:scale-[150%] transition delay-150" />
             </a>

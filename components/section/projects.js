@@ -161,7 +161,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <>
+    <div>
       {/* Projects Starts */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -312,6 +312,6 @@ export default function Projects() {
         ></path>
       </svg>
       {/* Projects Ends */}
-    </>
+    </div>
   );
 }
