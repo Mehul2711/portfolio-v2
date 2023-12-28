@@ -63,7 +63,7 @@ const Experience = () => {
                   key={experience.companyName}
                 >
                   <div
-                    className="md:w-[45%] cursor-pointer p-3  shadow-zinc-300 dark:shadow-zinc-700 bg-red-300 shadow-2xl   rounded"
+                    className="md:w-[45%] cursor-pointer p-3  shadow-zinc-300 dark:shadow-zinc-700 bg-[#b3f0ff] shadow-2xl   rounded"
                     onClick={() =>
                       setDesc(
                         desc === experience.description
@@ -138,7 +138,7 @@ const Experience = () => {
                     <BsArrowDownCircle size={22} />
                   </button>
                   <div
-                    className="md:w-[45%] cursor-pointer  transition-all duration-500 p-3  shadow-zinc-300 dark:shadow-zinc-700 rounded bg-red-300 shadow-2xl "
+                    className="md:w-[45%] cursor-pointer  transition-all duration-500 p-3  shadow-zinc-300 dark:shadow-zinc-700 rounded bg-[#b3f0ff] shadow-2xl "
                     onClick={() =>
                       setDesc(
                         desc === experience.description

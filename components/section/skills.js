@@ -113,7 +113,7 @@ const Skills = () => {
           >
             {sectionData.map((tech) => (
               <div
-                className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-red-300 shadow-2xl rounded-lg flex flex-col  gap-3 items-center"
+                className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#b3f0ff] text-black shadow-2xl rounded-lg flex flex-col  gap-3 items-center"
                 key={tech.name}
               >
                 <p>{tech.icon}</p>
