@@ -273,7 +273,7 @@ export default function Projects() {
                             </Bounce>
                           ) : (
                             <div>
-                              <p className="md:text-xl border-2 border-black  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-9 shadow-2xl p-6 md:p-5 ">
+                              <p className="md:text-xl border-2 bg-white text-black border-black  mt-5 sm:mt-0 sm:mx-10 text-justify md:leading-9 shadow-2xl p-6 md:p-5 ">
                                 {description}
                               </p>
                             </div>

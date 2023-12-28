@@ -71,9 +71,29 @@ export default function Main() {
                   <MdCode className="mr-2" /> Some of my projects
                 </a>
               </div>
+              <div className="mt-10 flex justify-center sm:justify-start mx-screen">
+                {/* <iframe
+                  style={{ borderRadius: "12px" }}
+                  src="https://open.spotify.com/embed/playlist/2XWT5TUer1VxyLzS2w6Du5?utm_source=generator"
+                  frameBorder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="w-[300px] sm:w-[450px] h-[200px]"
+                ></iframe> */}
+                <iframe
+                  style={{ borderRadius: "12px" }}
+                  src="https://open.spotify.com/embed/playlist/2XWT5TUer1VxyLzS2w6Du5?utm_source=generator&theme=0"
+                  height="200px"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="w-[300px] sm:w-[450px] "
+                ></iframe>
+              </div>
             </div>
 
-            <div className="flex justify-end md:pt-32  md:mx-0 mx-5">
+            <div className="flex justify-end md:pt-40  md:mx-0 mx-5">
               <div className="">
                 <Fade right>
                   {" "}

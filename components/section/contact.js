@@ -10,6 +10,7 @@ import Flip from "react-reveal/Flip";
 
 export default function Contact() {
   const [explode, setExplode] = useState();
+  const [clearFormFlag, setClearFormFlag] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -46,12 +47,33 @@ export default function Contact() {
     email: "",
     msg: "",
   });
+  useEffect(() => {
+    if (explode) {
+      const clearFormTimeout = setTimeout(() => {
+        setClearFormFlag(true);
+      }, 1);
+
+      return () => clearTimeout(clearFormTimeout);
+    }
+  }, [explode, setClearFormFlag]);
+
+  useEffect(() => {
+    if (clearFormFlag) {
+      setFormData({
+        from: "",
+        email: "",
+        msg: "",
+      });
+      setClearFormFlag(false);
+    }
+  }, [clearFormFlag, setFormData]);
   const formSubmit = async (e) => {
     e.preventDefault();
     var d = document.getElementById("contactFormSubmit");
     d.innerHTML = "Sending...";
     d.classList.add("btn-disabled");
     d.classList.add("loading");
+
     try {
       const send = await fetch("/api/sendcontact", {
         method: "POST",
@@ -64,26 +86,32 @@ export default function Contact() {
           msg: e.target.msg.value,
         }),
       });
+
       var res = await send.json();
-    } catch {
-      toast.error("Internal server error.");
-    } finally {
+
       toast[res.type](res.message);
 
       if (res.type === "success") {
         setExplode(!explode);
-        setTimeout(() => setExplode(false), 1000);
-        setFormData({
-          from: "",
-          email: "",
-          msg: "",
-        });
+        setTimeout(() => {
+          setExplode(false);
+          clearForm();
+        }, 1000);
       }
-
+    } catch {
+      toast.error("Internal server error.");
+    } finally {
       d.innerHTML = "Send Message";
       d.classList.remove("btn-disabled");
       d.classList.remove("loading");
     }
+  };
+  const clearForm = () => {
+    setFormData({
+      from: "",
+      email: "",
+      msg: "",
+    });
   };
 
   return (
