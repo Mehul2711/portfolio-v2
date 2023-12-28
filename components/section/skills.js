@@ -115,12 +115,7 @@ const Skills = () => {
             ref={techBoxesRef}
           >
             {sectionData.map((tech) => (
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
-                key={e}
-              >
+              <motion.a whileHover={{ scale: 1.1 }}>
                 <LightSpeed left>
                   <div
                     className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#3eff9e]  text-black shadow-2xl rounded-lg flex flex-col  gap-3 items-center"
