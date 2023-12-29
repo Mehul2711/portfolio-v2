@@ -45,7 +45,7 @@ export default function Social({ type }) {
     <>
       <div className="text-center">
         <div
-          className={`flex text-4xl md:text-3xl text-gray-500 ${
+          className={`flex text-4xl md:text-5xl text-gray-500 ${
             type === "footer"
               ? "space-x-4 ml-2 md:space-x-6"
               : "space-x-7 mt-2 text-center md:text-left"

@@ -74,14 +74,14 @@ export default function About() {
                 </div>
                 {screenWidth >= 640 ? ( // Check if screen width is greater than or equal to 640px
                   <Fade right>
-                    <div className="mt-2 md:text-lg text-justify">
+                    <div className="mt-5 md:text-xl text-justify">
                       Hey! I&apos;m Mehul Kumar, the coding Picasso and
                       badminton bandit at SRM Institute of Science and
                       Technology. Picture this: I&apos;m conquering algorithms
                       like a superhero and battling on badminton courts, all
                       while trying not to spill my coffee on the keyboard.
                     </div>
-                    <p className="mt-5 md:text-lg text-justify">
+                    <p className="mt-5 md:text-xl text-justify">
                       In the coding kingdom, I am on a quest to master Data
                       Structures and Algorithms using the magical languages of
                       CPP and Java. It&apos;s not just about surviving exams;
@@ -90,7 +90,7 @@ export default function About() {
                       coding is a puzzle, badminton is a battlefield, and every
                       bug is a mischievous sidekick.
                     </p>
-                    <p className="mt-5 md:text-lg text-justify">
+                    <p className="mt-5 md:text-xl text-justify">
                       So, fasten your seatbelt as we ride through the fusion of
                       tech madness and eclectic interests. It&apos;s not just a
                       journey; it&apos;s a comedy show where codes crack jokes,

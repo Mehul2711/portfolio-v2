@@ -116,12 +116,12 @@ const Skills = () => {
           >
             {sectionData.map((tech) => (
               <motion.a whileHover={{ scale: 1.1 }} key={tech.name}>
-                <LightSpeed left>
+                <Flip left>
                   <div className="transition-all duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] bg-[#3fe9ff]  text-black shadow-2xl  flex flex-col gap- items-center ">
                     <p>{tech.icon}</p>
                     <p>{tech.name}</p>
                   </div>
-                </LightSpeed>
+                </Flip>
               </motion.a>
             ))}
           </div>
