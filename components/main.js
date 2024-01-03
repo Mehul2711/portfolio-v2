@@ -145,7 +145,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className=" animate-sb pt-8 sm:pt-20  flex justify-center">
+          <div className=" animate-sb pt-8 sm:pt-8  flex justify-center">
             <a href="#about">
               <IoIosArrowDropdownCircle className="scale-[200%] hover:scale-[150%] transition delay-150" />
             </a>

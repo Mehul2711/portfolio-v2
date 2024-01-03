@@ -75,11 +75,13 @@ export default function About() {
                 {screenWidth >= 640 ? ( // Check if screen width is greater than or equal to 640px
                   <Fade right>
                     <div className="mt-5 md:text-xl text-justify">
-                      Hey! I&apos;m Mehul Kumar, the coding Picasso and
-                      badminton bandit at SRM Institute of Science and
-                      Technology. Picture this: I&apos;m conquering algorithms
-                      like a superhero and battling on badminton courts, all
-                      while trying not to spill my coffee on the keyboard.
+                      Hey! I&apos;m{" "}
+                      <span className="font-extrabold ">Mehul Kumar</span>, the
+                      coding Picasso and badminton bandit at SRM Institute of
+                      Science and Technology. Picture this: I&apos;m conquering
+                      algorithms like a superhero and battling on badminton
+                      courts, all while trying not to spill my coffee on the
+                      keyboard.
                     </div>
                     <p className="mt-5 md:text-xl text-justify">
                       In the coding kingdom, I am on a quest to master Data
