@@ -121,7 +121,7 @@ export default function Navbar() {
                   Contact
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/188-r7IES_ZIypvYj0D_CjCfUEgLBXmja/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1YLUYRstGTf90SacBowYkxx71DgDuOufu/view"
                   className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                 >
                   <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
