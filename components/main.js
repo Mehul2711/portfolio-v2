@@ -44,17 +44,11 @@ export default function Main() {
                 <p
                   data-aos="fade-right"
                   data-aos-duration="1000"
-                  className="text-sm md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block text-center sm:text-start mb-2 md:mb-0 mx-5 sm:mx-0 sm:mt-2"
+                  className="text-[13px] md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block text-center sm:text-start mb-2 md:mb-0 sm:mx-0 sm:mt-2"
                 >
                   <span className="text-black">{`A guy who loves to `}</span>
                   <Typed
-                    strings={[
-                      "coding ",
-                      "eating ",
-                      "gaming",
-                      "travelling",
-                      "sleeping ",
-                    ]}
+                    strings={["code ", "eat ", "travel", "sleep "]}
                     typeSpeed={79}
                     backSpeed={50}
                     backDelay={40}
