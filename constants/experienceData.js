@@ -17,4 +17,13 @@ export const ExperienceData = [
       "As a React JS Intern, I played a pivotal role in crafting a seamless and visually appealing e-commerce website for a prominent online clothing retailer. Leveraging my skills, I enhanced user experience and contributed to the company's online success.",
     side: "right",
   },
+  {
+    companyName: "Blitz Digital",
+    location: "Chennai, India",
+    role: "Frontend Intern",
+    fromTo: "Jan 2024 - Feb 2024",
+    description:
+      "I worked as a frontend intern, where I successfully created a diverse range of websites using WordPress. I skillfully added multiple components, ensuring they were aesthetically pleasing and functionally perfect.",
+    side: "right",
+  },
 ];
