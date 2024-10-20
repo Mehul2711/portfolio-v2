@@ -130,7 +130,7 @@ export default function Contact() {
       </svg>
       <div className="px-6 bg-[#3fe9ff]">
         <Waypoints target={"tocontact"}>
-          <section id="contact" className="pt-16">
+          <section id="contact" className="py-16">
             <h1
               className="text-2xl font-bold text-center text-gray-900"
               data-aos="fade-up"
@@ -333,12 +333,19 @@ export default function Contact() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         fill="#3fe9ff"
+        className="invert-svg"
       >
         <path
           fillOpacity={1}
-          d="M0,64L48,96C96,128,192,192,288,224C384,256,480,256,576,218.7C672,181,768,107,864,112C960,117,1056,203,1152,224C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
+
+      <style jsx>{`
+        .invert-svg {
+          transform: rotate(180deg);
+        }
+      `}</style>
 
       {/* Contact Ends */}
     </>

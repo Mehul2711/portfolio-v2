@@ -21,6 +21,40 @@ export default function Projects() {
     {
       name: "Weather App",
       description:
+        "ImageGate is a full-stack app utilizing Next.js, Express, and MongoDB. It features 100% user authentication, 95% image retrieval accuracy via Pexels API, and optimized pagination for 90% load efficiency, ensuring seamless performance.",
+      isLeft: true,
+      website: "https://image-gate.vercel.app/",
+      icon: {
+        name: FaReact,
+        fill: clsx("group-hover:fill-[#FF2D20]"),
+      },
+      image: {
+        src: "/img/projects/imageGate.png",
+        alt: "Weather App",
+        width: 448,
+        height: 250,
+      },
+    },
+    {
+      name: "Weather App",
+      description:
+        "GitHelper chatbot, built with Next.js, provides quick Git command explanations through keyword matching from a predefined command file. It supports interactive user input with response times under 500ms, ensuring fast and efficient Git assistance. ",
+      isRight: true,
+      website: "https://git-helper-weld.vercel.app",
+      icon: {
+        name: FaReact,
+        fill: clsx("group-hover:fill-[#FF2D20]"),
+      },
+      image: {
+        src: "/img/projects/gitHelper.png",
+        alt: "Weather App",
+        width: 448,
+        height: 250,
+      },
+    },
+    {
+      name: "Weather App",
+      description:
         "A Next.js weather app portal efficiently delivers real-time weather information, seamlessly blending dynamic UI with server-side rendering. Users experience fast, interactive updates and a responsive interface for accessing accurate and up-to-date weather data.",
       isLeft: true,
       website: "https://weather-app-alpha-gold-58.vercel.app/",
@@ -175,7 +209,7 @@ export default function Projects() {
       </svg>
       <div className="bg-[#3fe9ff] px-6">
         <Waypoints target={"toprojects"}>
-          <section id="projects" className="pt-28">
+          <section id="projects" className="py-28">
             <h1 className="text-3xl font-bold text-center" data-aos="fade-up">
               Some of My Projects
             </h1>
@@ -303,12 +337,20 @@ export default function Projects() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         fill="#3fe9ff"
+        className="invert-svg"
       >
         <path
           fillOpacity={1}
-          d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,106.7C560,139,640,181,720,197.3C800,213,880,203,960,170.7C1040,139,1120,85,1200,80C1280,75,1360,117,1400,138.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
+
+      <style jsx>{`
+        .invert-svg {
+          transform: rotate(180deg);
+        }
+      `}</style>
+
       {/* Projects Ends */}
     </div>
   );
