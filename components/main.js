@@ -14,7 +14,7 @@ import Skills from "./section/skills";
 import Experience from "./section/experience";
 import { motion } from "framer-motion";
 
-import me from "../public/img/me.jpg";
+import me from "../public/img/me3.jpeg";
 
 export default function Main() {
   return (
@@ -101,9 +101,9 @@ export default function Main() {
               <div>
                 <Flip right>
                   <div className="grid grid-cols-1">
-                    <div className="flex justify-end items-center md:mr-10 ">
+                    <div className="flex justify-end items-center md:mr-1 ">
                       <motion.a whileHover={{ scale: 1.1 }}>
-                        <div className=" overflow-hidden  shadow-2xl rounded-full  ">
+                        <div className=" overflow-hidden border-black border-4   shadow-2xl rounded-full  ">
                           <Image
                             src={me}
                             alt="hero image"
