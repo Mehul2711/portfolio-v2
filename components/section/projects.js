@@ -19,7 +19,7 @@ export default function Projects() {
   let gh = "https://github.com/Mehul2711";
   let [projects] = useState([
     {
-      name: "Weather App",
+      name: "ImageGate",
       description:
         "ImageGate is a full-stack app utilizing Next.js, Express, and MongoDB. It features 100% user authentication, 95% image retrieval accuracy via Pexels API, and optimized pagination for 90% load efficiency, ensuring seamless performance.",
       isLeft: true,
@@ -36,7 +36,7 @@ export default function Projects() {
       },
     },
     {
-      name: "Weather App",
+      name: "The GitHelper",
       description:
         "GitHelper chatbot, built with Next.js, provides quick Git command explanations through keyword matching from a predefined command file. It supports interactive user input with response times under 500ms, ensuring fast and efficient Git assistance. ",
       isRight: true,
