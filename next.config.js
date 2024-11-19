@@ -6,4 +6,16 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  experimental: {
+    esmExternals: "loose", // Allow loose handling of ES modules
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.mjs$/,
+      include: /node_modules/,
+      type: "javascript/auto",
+    });
+    return config;
+  },
+};

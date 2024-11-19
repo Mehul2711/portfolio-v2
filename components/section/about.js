@@ -5,30 +5,23 @@ import Waypoints from "../dust/waypoints";
 import Fade from "react-reveal/Fade";
 import face from "../../public/img/codeing2.gif";
 
-
 export default function About() {
   const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
- 
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
-  
     setScreenWidth(window.innerWidth);
 
-    
     window.addEventListener("resize", handleResize);
 
-   
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
     <>
-   
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -53,7 +46,6 @@ export default function About() {
                     alt="about me"
                     width={600}
                     height={500}
-              
                   />
                 </Fade>
               </div>
@@ -72,7 +64,7 @@ export default function About() {
                     data-aos-duration="1000"
                   ></div>
                 </div>
-                {screenWidth >= 640 ? ( 
+                {screenWidth >= 640 ? (
                   <Fade right>
                     <div className="mt-5 md:text-xl text-justify">
                       Hey! I&apos;m{" "}
@@ -101,7 +93,6 @@ export default function About() {
                     </p>
                   </Fade>
                 ) : (
-                
                   <div className="mt-2 md:text-lg text-justify">
                     <div className="mt-2 md:text-lg text-justify">
                       Hey! I&apos;m Mehul Kumar, the coding Picasso and
@@ -128,7 +119,6 @@ export default function About() {
                     </p>
                   </div>
                 )}
-             
               </div>
             </div>
           </section>
@@ -151,8 +141,6 @@ export default function About() {
           transform: rotate(180deg);
         }
       `}</style>
-
-     
     </>
   );
 }

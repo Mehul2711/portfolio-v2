@@ -13,6 +13,7 @@ import { Bounce, Flip, Roll } from "react-reveal";
 import Skills from "./section/skills";
 import Experience from "./section/experience";
 import { motion } from "framer-motion";
+import Resume from "./section/resume";
 
 import me from "../public/img/me3.jpeg";
 
@@ -152,6 +153,8 @@ export default function Main() {
       <Skills />
       <Projects />
       <Experience />
+      <Resume />
+
       <Contact />
     </>
   );
