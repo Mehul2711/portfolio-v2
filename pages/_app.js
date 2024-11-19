@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import { Analytics } from "@vercel/analytics/react";
-import Preloader from "../components/preLoader"; // Adjust the path based on your project structure
+import Preloader from "../components/preLoader"; 
 
 import "aos/dist/aos.css";
 import "../styles/globals.css";
@@ -12,13 +12,13 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an asynchronous operation (e.g., fetching data)
+   
     const fetchData = async () => {
-      // Your async operation here...
+    
 
       setTimeout(() => {
         setLoading(false);
-      }, 3500); // Adjust the delay time in milliseconds
+      }, 3500); 
     };
 
     fetchData();
