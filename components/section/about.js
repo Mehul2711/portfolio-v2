@@ -4,30 +4,30 @@ import { useState, useEffect } from "react";
 import Waypoints from "../dust/waypoints";
 import Fade from "react-reveal/Fade";
 import face from "../../public/img/codeing2.gif";
-// import code from "../../public/img/code.jpg";
+
 
 export default function About() {
   const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
-    // Update the screen width on window resize
+ 
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    // Initial screen width
+  
     setScreenWidth(window.innerWidth);
 
-    // Event listener for window resize
+    
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener
+   
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
     <>
-      {/* About Starts */}
+   
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function About() {
                     alt="about me"
                     width={600}
                     height={500}
-                    // data-aos="fade-up-right"
+              
                   />
                 </Fade>
               </div>
@@ -72,7 +72,7 @@ export default function About() {
                     data-aos-duration="1000"
                   ></div>
                 </div>
-                {screenWidth >= 640 ? ( // Check if screen width is greater than or equal to 640px
+                {screenWidth >= 640 ? ( 
                   <Fade right>
                     <div className="mt-5 md:text-xl text-justify">
                       Hey! I&apos;m{" "}
@@ -101,7 +101,7 @@ export default function About() {
                     </p>
                   </Fade>
                 ) : (
-                  // Render content without fade animation for screen width below 640px
+                
                   <div className="mt-2 md:text-lg text-justify">
                     <div className="mt-2 md:text-lg text-justify">
                       Hey! I&apos;m Mehul Kumar, the coding Picasso and
@@ -128,9 +128,7 @@ export default function About() {
                     </p>
                   </div>
                 )}
-                {/* <div class="tooltip tooltip-open tooltip-right mt-5" data-tip={`${gh.followers} Followers, ${gh.following} Following`}>
-                <button class="btn"><FaGithub className="mr-2 w-5 h-5" /> Github</button>
-              </div> */}
+             
               </div>
             </div>
           </section>
@@ -154,7 +152,7 @@ export default function About() {
         }
       `}</style>
 
-      {/* About Ends */}
+     
     </>
   );
 }
