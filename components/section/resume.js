@@ -89,9 +89,9 @@ const Resume = () => {
                       <a
                         href="/mehulResSDE-3.pdf"
                         download="Mehul_Resume.pdf"
-                        className="bg-red-600 text-white px-4 sm:px-8 py-4 sm:py-5 mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
+                        className="bg-red-600 text-white px-5 py-2  mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
                       >
-                        ⬇ DOWNLOAD RESUME
+                        ⬇ DOWNLOAD
                       </a>
                     </span>
                   </p>
