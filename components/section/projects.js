@@ -173,22 +173,22 @@ export default function Projects() {
     },
   ]);
 
-  // State to track the window width
+
   const [windowWidth, setWindowWidth] = useState(0);
 
-  // Effect to update the window width on mount and resize
+ 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Initial setup
+   
     handleResize();
 
-    // Event listener for window resize
+  
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
+   
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -196,7 +196,7 @@ export default function Projects() {
 
   return (
     <div>
-      {/* Projects Starts */}
+    
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -351,7 +351,6 @@ export default function Projects() {
         }
       `}</style>
 
-      {/* Projects Ends */}
     </div>
   );
 }
