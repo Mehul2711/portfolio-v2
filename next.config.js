@@ -7,9 +7,9 @@ const nextConfig = {
 };
 
 module.exports = {
-  experimental: {
-    esmExternals: "loose", // Allow loose handling of ES modules
-  },
+  // experimental: {
+  //   esmExternals: "loose", // Allow loose handling of ES modules
+  // },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.mjs$/,

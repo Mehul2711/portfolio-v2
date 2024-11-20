@@ -57,7 +57,7 @@ const PreLoader = () => {
       {/* Subtext with Bounce Animation */}
       <Fade delay={500} triggerOnce>
         <div className="mt-5 text-lg font-medium text-center text-gray-600 animate-bounce z-10">
-          We're almost ready! 🚀
+          We&apos;re almost ready! 🚀
         </div>
       </Fade>
     </div>
