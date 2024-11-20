@@ -27,15 +27,31 @@ module.exports = {
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
+        spinSlow: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        floating: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-30px)" }, // Increased range for dynamic motion
+          "100%": { transform: "translateY(0px)" },
+        },
+        flicker: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0.5 },
+        },
       },
       animation: {
         sb: "sb 1s infinite alternate",
         wave: "wave 2s linear infinite",
+        "spin-slow": "spinSlow 6s linear infinite",
+        floating: "floating 2s ease-in-out infinite", // Faster floating animation
+        flicker: "flicker 2s infinite",
       },
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ['light', 'dracula']
-  }
+    themes: ["light", "dracula"],
+  },
 };

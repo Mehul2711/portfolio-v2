@@ -111,15 +111,6 @@ export default function Navbar() {
                   <GiSoapExperiment className="inline text-xl md:w-auto md:h-auto" />{" "}
                   Experience
                 </a>
-
-                <a
-                  href="#contact"
-                  id="tocontact"
-                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
-                >
-                  <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
-                  Contact
-                </a>
                 <a
                   href="#resume"
                   id="toresume"
@@ -127,6 +118,14 @@ export default function Navbar() {
                 >
                   <TbListDetails className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
                   Resume/CV
+                </a>
+                <a
+                  href="#contact"
+                  id="tocontact"
+                  className="transition delay-100 inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-base-700 hover:text-indigo-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                >
+                  <IoIosPaperPlane className="inline w-5 h-5 md:w-auto md:h-auto" />{" "}
+                  Contact
                 </a>
               </div>
               <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
