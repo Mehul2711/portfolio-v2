@@ -143,69 +143,70 @@ export default function Contact() {
               ></div>
             </div>
             <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-5  mx-auto text-gray-900">
-              <div className="flex flex-col justify-between">
-                <div>
+              <Slide up>
+                <div className="flex flex-col justify-between">
                   <div>
-                    <h2
-                      className="text-2xl text-center sm:text-start font-bold sm:mt-10"
-                      data-aos="fade-right"
-                    >
-                      <FaDiscord className="fill-indigo-500 inline-block" />{" "}
-                      Discord
-                    </h2>
-                    <div className="flex justify-center sm:justify-start">
-                      <div
-                        className="bg-[#6C63FF] w-[120px] h-[5px]"
+                    <div>
+                      <h2
+                        className="text-2xl text-center sm:text-start font-bold sm:mt-10"
                         data-aos="fade-right"
-                        data-aos-duration="1000"
-                      ></div>
+                      >
+                        <FaDiscord className="fill-indigo-500 inline-block" />{" "}
+                        Discord
+                      </h2>
+                      <div className="flex justify-center sm:justify-start">
+                        <div
+                          className="bg-[#6C63FF] w-[120px] h-[5px]"
+                          data-aos="fade-right"
+                          data-aos-duration="1000"
+                        ></div>
+                      </div>
+
+                      <ul className="sm:list-disc flex justify-center sm:justify-start ml-5 mt-1">
+                        <li>{`mehul_2711`}</li>
+                      </ul>
                     </div>
 
-                    <ul className="sm:list-disc flex justify-center sm:justify-start ml-5 mt-1">
-                      <li>{`mehul_2711`}</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h2
-                      className="text-2xl font-bold mt-5 sm:mt-10 text-center sm:text-start"
-                      data-aos="fade-right"
-                    >
-                      <FaEnvelope className="fill-indigo-500 inline-block" />{" "}
-                      Email
-                    </h2>
-                    <div className="flex justify-center sm:justify-start">
-                      <div
-                        className="bg-[#6C63FF] w-[120px] h-[5px]"
+                    <div>
+                      <h2
+                        className="text-2xl font-bold mt-5 sm:mt-10 text-center sm:text-start"
                         data-aos="fade-right"
-                        data-aos-duration="1000"
-                      ></div>
-                    </div>
+                      >
+                        <FaEnvelope className="fill-indigo-500 inline-block" />{" "}
+                        Email
+                      </h2>
+                      <div className="flex justify-center sm:justify-start">
+                        <div
+                          className="bg-[#6C63FF] w-[120px] h-[5px]"
+                          data-aos="fade-right"
+                          data-aos-duration="1000"
+                        ></div>
+                      </div>
 
-                    <ul className="sm:list-disc  sm:ml-5 mt-1">
-                      <li className="text-sm sm:text-xl text-center sm:text-start">
-                        <a
-                          href="mailto:mehul271102@gmail.com"
-                          className="hover:text-indigo-500"
-                        >
-                          mehul271102@gmail.com
-                        </a>{" "}
-                        (main)
-                      </li>
-                      <li className="text-sm sm:text-xl text-center sm:text-start">
-                        <a
-                          href="mailto:mehulkumar086@gmail.com"
-                          className="hover:text-indigo-500"
-                        >
-                          mehulkumar086@gmail.com
-                        </a>{" "}
-                        (2nd)
-                      </li>
-                    </ul>
+                      <ul className="sm:list-disc  sm:ml-5 mt-1">
+                        <li className="text-sm sm:text-xl text-center sm:text-start">
+                          <a
+                            href="mailto:mehul271102@gmail.com"
+                            className="hover:text-indigo-500"
+                          >
+                            mehul271102@gmail.com
+                          </a>{" "}
+                          (main)
+                        </li>
+                        <li className="text-sm sm:text-xl text-center sm:text-start">
+                          <a
+                            href="mailto:mehulkumar086@gmail.com"
+                            className="hover:text-indigo-500"
+                          >
+                            mehulkumar086@gmail.com
+                          </a>{" "}
+                          (2nd)
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-
+              </Slide>
               <div className="mt-5 sm:mt-0">
                 <form id="contactForm" onSubmit={formSubmit}>
                   {/* <div className="grid grid-cols-2 gap-4"> */}

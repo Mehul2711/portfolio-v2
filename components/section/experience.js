@@ -86,13 +86,8 @@ const Experience = () => {
                   // Content without React Reveal animations for mobile view
                   <div
                     className={`md:w-[45%] cursor-pointer p-6  border-2 border-black  shadow-zinc-300 dark:shadow-zinc-700 bg-[#3fe9ff] shadow-2xl   `}
-                    onClick={() =>
-                      setDesc(
-                        desc === experience.description
-                          ? ""
-                          : experience.description
-                      )
-                    }
+                    onMouseEnter={() => setDesc(experience.description)}
+                    onMouseLeave={() => setDesc("")}
                   >
                     <div className="flex justify-between gap-2">
                       <p className="text-xl md:text-3xl font-bold text-violet-600">
@@ -109,9 +104,9 @@ const Experience = () => {
                     </div>
 
                     <p
-                      className="mt-3 text-justify transition-all duration-500 overflow-hidden text-black sm:text-xl"
+                      className="mt-3 text-justify transition-all duration-700 overflow-hidden text-black sm:text-xl"
                       style={
-                        desc == experience.description
+                        desc === experience.description
                           ? { maxHeight: "400px" }
                           : { maxHeight: "0px" }
                       }
@@ -128,13 +123,8 @@ const Experience = () => {
                     <div className="flex justify-center ">
                       <div
                         className={`md:w-[80%] cursor-pointer p-6 my-8  shadow-zinc-300 dark:shadow-zinc-700 bg-[#3fe9ff] border-2 border-black shadow-2xl   `}
-                        onClick={() =>
-                          setDesc(
-                            desc === experience.description
-                              ? ""
-                              : experience.description
-                          )
-                        }
+                        onMouseEnter={() => setDesc(experience.description)}
+                        onMouseLeave={() => setDesc("")}
                       >
                         <div className="flex justify-between gap-2">
                           <p className="text-xl md:text-3xl font-bold text-violet-600">
@@ -151,9 +141,9 @@ const Experience = () => {
                         </div>
 
                         <p
-                          className="mt-3 text-justify transition-all duration-500 overflow-hidden text-black sm:text-xl"
+                          className="mt-3 text-justify transition-all duration-700 overflow-hidden text-black sm:text-xl"
                           style={
-                            desc == experience.description
+                            desc === experience.description
                               ? { maxHeight: "400px" }
                               : { maxHeight: "0px" }
                           }

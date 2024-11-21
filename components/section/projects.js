@@ -173,22 +173,17 @@ export default function Projects() {
     },
   ]);
 
-
   const [windowWidth, setWindowWidth] = useState(0);
 
- 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-   
     handleResize();
 
-  
     window.addEventListener("resize", handleResize);
 
-   
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -196,7 +191,6 @@ export default function Projects() {
 
   return (
     <div>
-    
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -251,7 +245,7 @@ export default function Projects() {
                                       className="object-cover"
                                     />
                                   </figure>
-                                  <div className="absolute top-0 left-0 w-full h-[250px] bg-black backdrop-blur-sm hover:backdrop-blur-none bg-opacity-50 transition-opacity duration-300 ease-in hover:bg-opacity-0 flex items-center justify-center">
+                                  <div className="absolute top-0 left-0 w-full h-[250px] border-4 border-black bg-black backdrop-blur-sm hover:backdrop-blur-none bg-opacity-50 transition-opacity duration-300 ease-in hover:bg-opacity-0 flex items-center justify-center shadow-2xl">
                                     <h2 className="card-title text-2xl text-white opacity-100 group-hover:opacity-0 transition ease-in-out delay-150 m-0">
                                       <icon.name className={`${icon.fill}`} />
                                       {name}
@@ -327,7 +321,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
               >
                 <FaGithub className="mr-2 w-5 h-5" />
-                View all my Projects. <FaAngleRight className="ml-2" />
+                View all my Projects
               </a>
             </div>
           </section>
@@ -350,7 +344,6 @@ export default function Projects() {
           transform: rotate(180deg);
         }
       `}</style>
-
     </div>
   );
 }

@@ -3,13 +3,13 @@ import Typed from "react-typed";
 import Waypoints from "../dust/waypoints";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import Slide from "react-reveal/Slide";
-// Dynamically import Worker and Viewer
+
 const Worker = dynamic(() =>
   import("@react-pdf-viewer/core").then((mod) => mod.Worker)
 );
 const Viewer = dynamic(
   () => import("@react-pdf-viewer/core").then((mod) => mod.Viewer),
-  { ssr: false } // Avoid SSR issues
+  { ssr: false }
 );
 
 const Resume = () => {
@@ -79,7 +79,7 @@ const Resume = () => {
                   <Worker
                     workerUrl={`https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js`}
                   >
-                    <Viewer fileUrl="/mehulResSDE-3.pdf" />
+                    <Viewer fileUrl="/mehulResSDE-4.pdf" />
                   </Worker>
                 </div>
 

@@ -1,29 +1,29 @@
 export const ExperienceData = [
   {
-    companyName: "NHPC",
+    companyName: "NHPC LTD",
     location: "Faridabad, India",
-    role: "Front End Intern",
+    role: "Web Development Intern",
     fromTo: "June 2023 - September 2023",
     description:
-      "As an intern, I revitalized a key component on the company's website by implementing a stunning and user-friendly UI, enhancing functionality with innovative logic, and contributing to a seamless online experience.",
+      "Redesigned and improved the slider component, optimizing frontend performance and reducing load time by 20%. Implemented responsive and intuitive UI components using ReactJS and TailwindCSS, increasing user satisfaction by 15%.",
     side: "left",
   },
   {
     companyName: "Saraayat",
-    location: "Chennai, India",
-    role: "React JS Intern",
+    location: "Remote",
+    role: "Web Development Intern",
     fromTo: "August 2023 - November 2023",
     description:
-      "As a React JS Intern, I played a pivotal role in crafting a seamless and visually appealing e-commerce website for a prominent online clothing retailer. Leveraging my skills, I enhanced user experience and contributed to the company's online success.",
+      "Developed a full-stack e-commerce application using ReactJS, NodeJS, and MongoDB, reducing page load times by 25% and enhancing user engagement. Designed innovative solutions and optimized website performance for improved user experience.",
     side: "right",
   },
   {
     companyName: "Blitz Digital",
-    location: "Chennai, India",
+    location: "Remote",
     role: "Frontend Intern",
-    fromTo: "Jan 2024 - Feb 2024",
+    fromTo: "January 2024 - February 2024",
     description:
-      "I worked as a frontend intern, where I successfully created a diverse range of websites using WordPress. I skillfully added multiple components, ensuring they were aesthetically pleasing and functionally perfect.",
+      "Created a variety of websites using WordPress, incorporating themes, plugins, widgets, and custom post types. Boosted site functionality by approximately 20% through effective use of widgets.",
     side: "right",
   },
 ];

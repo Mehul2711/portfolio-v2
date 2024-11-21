@@ -104,7 +104,7 @@ export default function Main() {
                   <div className="grid grid-cols-1">
                     <div className="flex justify-end items-center md:mr-1 ">
                       <motion.a whileHover={{ scale: 1.1 }}>
-                        <div className=" overflow-hidden border-black border-4   shadow-2xl rounded-full  ">
+                        <div className=" overflow-hidden border-black  border-2 shadow-2xl rounded-full  ">
                           <Image
                             src={me}
                             alt="hero image"
