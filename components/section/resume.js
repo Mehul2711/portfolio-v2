@@ -79,7 +79,7 @@ const Resume = () => {
                   <Worker
                     workerUrl={`https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js`}
                   >
-                    <Viewer fileUrl="/mehulResSDE-4.pdf" />
+                    <Viewer fileUrl="/mehulResume.pdf" />
                   </Worker>
                 </div>
 
