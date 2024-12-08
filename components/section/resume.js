@@ -62,8 +62,8 @@ const Resume = () => {
                   <p data-aos="fade-right">
                     <span className="text-black">
                       <a
-                        href="/mehulResSDE-3.pdf"
-                        download="Mehul_Resume.pdf"
+                        href="/mehulResumeJob.pdf"
+                        download="mehulResumeJob.pdf"
                         className="bg-red-600 text-white px-10 py-5 mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
                       >
                         ⬇ DOWNLOAD RESUME
@@ -87,8 +87,8 @@ const Resume = () => {
                   <p data-aos="fade-right">
                     <span className="text-black">
                       <a
-                        href="/mehulResSDE-3.pdf"
-                        download="Mehul_Resume.pdf"
+                        href="/mehulResumeJob.pdf"
+                        download="mehulResumeJob.pdf"
                         className="bg-red-600 text-white px-5 py-2  mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
                       >
                         ⬇ DOWNLOAD
