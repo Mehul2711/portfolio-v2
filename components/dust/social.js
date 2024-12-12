@@ -5,7 +5,9 @@ import {
   FaInstagram,
   FaNpm,
   FaTwitter,
-} from "react-icons/fa";
+  FaLinkedin,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { useState, Fragment } from "react";
 import { clsx } from "clsx";
 
@@ -21,8 +23,8 @@ export default function Social({ type }) {
     {
       href: "https://twitter.com/Mehulkumar_27",
       icon: {
-        icon: FaTwitter,
-        fill: clsx("hover:fill-brand-fb"),
+        icon: FaXTwitter,
+        fill: clsx("hover:fill-black"),
       },
     },
     {
@@ -37,6 +39,13 @@ export default function Social({ type }) {
       icon: {
         icon: FaInstagram,
         fill: clsx("hover:fill-[url(#instagram-gradient)]"),
+      },
+    },
+    {
+      href: "https://www.linkedin.com/in/mehulkumar27/",
+      icon: {
+        icon: FaLinkedin,
+        fill: clsx("hover:fill-[#0077b5]"),
       },
     },
   ]);
