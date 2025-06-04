@@ -62,8 +62,8 @@ const Resume = () => {
                   <p data-aos="fade-right">
                     <span className="text-black">
                       <a
-                        href="/mehulResumeJob.pdf"
-                        download="mehulResumeJob.pdf"
+                        href="/latestResume25.pdf"
+                        download="latestResume25.pdf"
                         className="bg-red-600 text-white px-10 py-5 mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
                       >
                         ⬇ DOWNLOAD RESUME
@@ -79,7 +79,7 @@ const Resume = () => {
                   <Worker
                     workerUrl={`https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js`}
                   >
-                    <Viewer fileUrl="/mehulResumeJob.pdf" />
+                    <Viewer fileUrl="/latestResume25.pdf" />
                   </Worker>
                 </div>
 
@@ -87,8 +87,8 @@ const Resume = () => {
                   <p data-aos="fade-right">
                     <span className="text-black">
                       <a
-                        href="/mehulResumeJob.pdf"
-                        download="mehulResumeJob.pdf"
+                        href="/latestResume25.pdf"
+                        download="latestResume25.pdf"
                         className="bg-red-600 text-white px-5 py-2  mx-2 rounded-lg text-sm hover:bg-red-700 hover:shadow-lg transition duration-300"
                       >
                         ⬇ DOWNLOAD
