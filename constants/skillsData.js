@@ -76,6 +76,15 @@ export const skillsData = [
           <SiNextdotjs className="md:text-4xl text-2xl dark:text-white text-black" />
         ),
       },
+      {
+        name: "JAVA",
+        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
+      },
+
+      {
+        name: "MySQL",
+        icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />,
+      },
     ],
     Good: [
       {
@@ -100,21 +109,9 @@ export const skillsData = [
         name: "Git",
         icon: <BsGit className="md:text-4xl text-2xl" color="#f4511e" />,
       },
-    ],
-    Familiar: [
       {
         name: "TypeScript",
         icon: <SiTypescript className="md:text-4xl text-2xl" color="#377cc8" />,
-      },
-
-      {
-        name: "JAVA",
-        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
-      },
-
-      {
-        name: "MySQL",
-        icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />,
       },
     ],
   },

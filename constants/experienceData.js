@@ -1,5 +1,14 @@
 export const ExperienceData = [
   {
+    companyName: "Infosys",
+    location: "Mysore",
+    role: "System Engineer",
+    fromTo: "September 2025 - Present",
+    description:
+      "I have worked as a System Engineer at Infosys, gaining hands-on experience in designing and developing scalable full-stack applications using the MERN stack. My role involved building, debugging, and optimizing applications in agile environments. I also worked with big data technologies such as PySpark and MySQL for data processing, analysis, and performance optimization, enabling data-driven solutions.",
+    side: "right",
+  },
+  {
     companyName: "NHPC LTD",
     location: "Faridabad, India",
     role: "Web Development Intern",

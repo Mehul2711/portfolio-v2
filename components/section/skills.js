@@ -96,7 +96,7 @@ const Skills = () => {
             >
               Good
             </button>
-            <button
+            {/* <button
               className={`w-[100px] md:w-[150px] p-2 font-bold ${
                 section === "Familiar" ? "bg-red-600" : null
               } transition-all`}
@@ -107,7 +107,7 @@ const Skills = () => {
               }}
             >
               Familiar
-            </button>
+            </button> */}
           </div>
 
           <div
