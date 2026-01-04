@@ -77,7 +77,7 @@ const Resume = () => {
               <div className=" w-[50%] flex flex-col  items-center ">
                 <div className="hidden sm:block w-full">
                   <Worker
-                    workerUrl={`https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js`}
+                    workerUrl={`https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.min.js`}
                   >
                     <Viewer fileUrl="/Resume26.pdf" />
                   </Worker>
